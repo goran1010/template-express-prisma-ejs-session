@@ -4,7 +4,7 @@ import indexController from "../controllers/indexController.js";
 
 indexRouter.get("/", indexController);
 
-indexRouter.use((req, res, next) => {
+indexRouter.use((req, res) => {
   res.status(404).render("errors/error-404");
 });
 

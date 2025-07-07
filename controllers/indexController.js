@@ -1,3 +1,3 @@
-export default function indexController(req, res, next) {
+export default function indexController(req, res) {
   res.render("index");
 }
